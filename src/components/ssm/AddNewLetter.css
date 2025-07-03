@@ -1,0 +1,228 @@
+.add-new-letter {
+  padding: 20px;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.add-new-letter-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.add-new-letter-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.add-new-letter-title {
+  margin: 0 0 10px 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.add-new-letter-subtitle {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+.add-new-letter-content {
+  padding: 30px;
+}
+
+.add-new-letter-error {
+  background: #fee;
+  color: #c33;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #fcc;
+}
+
+.add-new-letter-success {
+  background: #efe;
+  color: #363;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #cfc;
+}
+
+.add-new-letter-warning {
+  background: #fff3cd;
+  color: #856404;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ffeaa7;
+}
+
+.add-new-letter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add-new-letter-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.add-new-letter-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.add-new-letter-form-label {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.add-new-letter-form-input {
+  padding: 12px 16px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.add-new-letter-form-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.add-new-letter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.add-new-letter-checkbox-input {
+  width: 18px;
+  height: 18px;
+  accent-color: #667eea;
+}
+
+.add-new-letter-checkbox-label {
+  font-size: 1rem;
+  color: #333;
+}
+
+.add-new-letter-form-file {
+  padding: 12px 16px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f8f9fa;
+  cursor: pointer;
+}
+
+.add-new-letter-form-file:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.add-new-letter-file-info {
+  margin: 8px 0 0 0;
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+.add-new-letter-form-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.add-new-letter-form-btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.add-new-letter-form-btn.submit {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.add-new-letter-form-btn.submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.add-new-letter-form-btn.clear {
+  background: #6c757d;
+  color: white;
+}
+
+.add-new-letter-form-btn.clear:hover:not(:disabled) {
+  background: #5a6268;
+  transform: translateY(-2px);
+}
+
+.add-new-letter-form-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .add-new-letter {
+    padding: 10px;
+  }
+  
+  .add-new-letter-container {
+    margin: 0;
+    border-radius: 8px;
+  }
+  
+  .add-new-letter-header {
+    padding: 20px;
+  }
+  
+  .add-new-letter-title {
+    font-size: 1.5rem;
+  }
+  
+  .add-new-letter-content {
+    padding: 20px;
+  }
+  
+  .add-new-letter-form-row {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .add-new-letter-form-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .add-new-letter-form-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+} 
